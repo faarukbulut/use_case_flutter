@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:use_case_flutter/core/init/main_build.dart';
-import 'package:use_case_flutter/use_case/generic_log/generic_home_view.dart';
+import 'package:use_case_flutter/use_case/generic_filter/filter_home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: MainBuild.build,
-      home: GenericHomeView(),
+      home: FilterHomeView(),
     );
   }
 }
