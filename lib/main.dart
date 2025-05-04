@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:use_case_flutter/core/init/main_build.dart';
-import 'package:use_case_flutter/use_case/special_search/special_search_view.dart';
+import 'package:use_case_flutter/use_case/social_login/social_login_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       builder: MainBuild.build,
-      home: SpecialSearchView(),
+      home: SocialLoginView(),
     );
   }
 }
