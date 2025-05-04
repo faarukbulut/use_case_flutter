@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:use_case_flutter/core/init/main_build.dart';
-import 'package:use_case_flutter/use_case/local_search/local_search_view.dart';
+import 'package:use_case_flutter/use_case/background_pick_check/background_pick_check_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       builder: MainBuild.build,
-      home: LocalSearchView(),
+      home: BackgroundPickCheckView(),
     );
   }
 }
