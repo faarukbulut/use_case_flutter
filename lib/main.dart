@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:use_case_flutter/core/init/main_build.dart';
-import 'package:use_case_flutter/use_case/generic_filter/filter_home_view.dart';
+import 'package:use_case_flutter/use_case/local_search/local_search_view.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -12,8 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       builder: MainBuild.build,
-      home: FilterHomeView(),
+      home: LocalSearchView(),
     );
   }
 }
